@@ -1,0 +1,17 @@
+<template name="layout">
+  <header>
+   <navbar>some stuff here</navbar>
+  </header>
+
+  <aside>
+    {{> yield region='aside'}}
+  </aside>
+
+  <div>
+    {{> yield}}
+  </div>
+
+  <footer>
+    {{> yield region='footer'}}
+  </footer>
+</template>
