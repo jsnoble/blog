@@ -1,17 +1,15 @@
 <template name="layout">
+  <div class="mainPage">
   <header>
-   <navbar>some stuff here</navbar>
+    {{> yield region='header'}}
   </header>
 
-  <aside>
-    {{> yield region='aside'}}
-  </aside>
-
-  <div>
+  <article>
     {{> yield}}
-  </div>
+  </article>
 
   <footer>
     {{> yield region='footer'}}
   </footer>
+  </div>
 </template>

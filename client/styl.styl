@@ -1,20 +1,28 @@
-@import 'nib'
 @import 'jeet'
 
-edit()
-button()
+
+.navbar
+ nav()
+
+
 .btn
-  button: color = blue, size = "medium", textColor = black
+  button: green
+  hover-darken: 25%
 
-.container
+.test
+  color: red
+  +below(700px)
+    color: blue
+
+.mainPage
   center()
-aside
-  col (1/3)
 
+.third
+  column (ratios = 1/3, cycle = 3)
+  stack()
 p
   bold()
   fs: 40px
-
 
 
 
